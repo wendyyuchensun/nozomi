@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class Unit < ApplicationRecord
-  has_many :materials
+class Material < ApplicationRecord
+  belongs_to :unit
 
   validates :name, precense: true
 end
