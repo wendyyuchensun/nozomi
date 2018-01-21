@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
-class Appliance < ApplicationRecord
-  has_many :recipes
+class Recipe < ApplicationRecord
+  belongs_to :appliance
 
   validates :name, precense: true
 end
