@@ -3,5 +3,5 @@
 class Unit < ApplicationRecord
   has_many :materials
 
-  validates :name, precense: true
+  validates :name, presence: true
 end

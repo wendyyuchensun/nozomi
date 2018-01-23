@@ -5,5 +5,5 @@ class Appliance < ApplicationRecord
   has_many :procedures
   has_many :plans, through: :procedures
 
-  validates :name, precense: true
+  validates :name, presence: true
 end

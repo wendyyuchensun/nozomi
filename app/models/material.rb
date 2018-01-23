@@ -4,5 +4,5 @@ class Material < ApplicationRecord
   belongs_to :unit
   has_many :ingredients
 
-  validates :name, precense: true
+  validates :name, presence: true
 end

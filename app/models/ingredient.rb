@@ -4,5 +4,5 @@ class Ingredient < ApplicationRecord
   belongs_to :material
   belongs_to :recipe
 
-  validates :magnitude, precense: true
+  validates :magnitude, presence: true
 end
