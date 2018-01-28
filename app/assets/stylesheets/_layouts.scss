@@ -1,0 +1,33 @@
+header,
+main,
+footer {
+  padding: 0 20%;
+}
+
+header,
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  height: 10vh;
+}
+
+main {
+  height: 80vh;
+}
+
+footer {
+  font-size: 12px;
+  height: 10vh;
+
+  > span {
+    color: $gray;
+
+    a:hover {
+      color: $black;
+    }
+  }
+}
