@@ -10,6 +10,12 @@ Rails.application.config.content_security_policy do |p|
   p.script_src  :self, :https
   p.style_src   :self, :https, :unsafe_inline
 
+  # webpack-dev-server & livereload
+  if Rails.env.development?
+    p.connect_src :self, :https, 'http://localhost:3035', 'ws://localhost:3035', 'ws://localhost:35729/livereload'
+    p.script_src  :self, :https, :unsafe_inline, 'http://localhost:35729/livereload.js'
+  end
+
   # Specify URI for violation reports
   # p.report_uri "/csp-violation-report-endpoint"
 end

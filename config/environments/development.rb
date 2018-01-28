@@ -55,4 +55,8 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # rack-livereload
+  # comment out nextline if you want to change back to puma dev & nozomi.dev
+  config.middleware.insert_after ActionDispatch::Static, Rack::LiveReload
 end
