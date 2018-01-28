@@ -1,5 +1,11 @@
 {
   "name": "nozomi",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@rails/webpacker": "^3.2.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "webpack-dev-server": "^2.11.1"
+  }
 }
